@@ -11,7 +11,7 @@ function start(){
     tl.from(['.t1', '.logo'], .3, {opacity:0})
     
 
-    tl.add('lines', '+=1')
+    tl.add('lines', '+=.3')
     tl.from('.line.right', .6, {opacity:0, x:`+=${lineWidth}`, y:`+=${lineHeight}`}, 'lines')
     tl.from('.line.left', .6, {opacity:0, x:`-=${lineWidth}`, y:`-=${lineHeight}`}, 'lines')
 
