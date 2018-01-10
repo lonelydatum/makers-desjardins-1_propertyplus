@@ -9,12 +9,14 @@ function start() {
     var tl = new TimelineMax();
     tl.set('.frame1', { opacity: 1 });
 
-    tl.add('lines', '+=.0');
+    tl.from(['.t1', '.logo'], .3, { opacity: 0 });
+
+    tl.add('lines', '+=1');
     tl.from('.line.right', .6, { opacity: 0, x: '+=' + lineWidth, y: '+=' + lineHeight }, 'lines');
     tl.from('.line.left', .6, { opacity: 0, x: '-=' + lineWidth, y: '-=' + lineHeight }, 'lines');
 
-    tl.from('.house', .6, { opacity: 0, scale: 0, ease: Back.easeInOut }, 'lines+=.5');
-    tl.from('.car', .6, { opacity: 0, scale: 0, ease: Back.easeInOut }, 'lines+=.8');
+    tl.from('.house', .3, { opacity: 0, ease: Sine.easeInOut }, 'lines+=.5');
+    tl.from('.car', .3, { opacity: 0, scale: .6, ease: Sine.easeInOut }, 'lines+=.8');
     tl.from('.car', .6, { x: '-=30' });
 
     tl.add('f2', '+=2.5');
