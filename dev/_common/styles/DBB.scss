@@ -1,0 +1,19 @@
+@import './common.scss';
+
+.line{
+    width: 154px;
+}
+
+
+.frame2{
+	.cta{
+		@include pos(28, 154);		
+		// border: 1px solid red;
+		width: 151px;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+		font-size: 16px;
+		letter-spacing: .2px;		
+	}
+}

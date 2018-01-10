@@ -1,0 +1,49 @@
+
+@import '../../../_common/styles/DBB.scss';
+
+
+.frame2{
+	// opacity: 1;	
+}
+
+.frame1 {
+	// opacity: 1;	
+	.line.left{		
+		@include pos(0, 352);	
+	}
+
+	.line.right{
+		width: 154px;
+		@include pos(154, 136);	
+	}
+}
+
+
+.logo{
+	width: 161px;
+	height: 37px;
+	@include pos(113, 535);	
+}
+
+.t{
+	@include pos(26, 29);
+	font-size: 30px;
+	letter-spacing: -.2px;
+	line-height: 33px;
+}
+
+
+.house{
+	transform-origin: 150px 380px;
+}
+
+
+.car{
+	transform-origin: 220px 375px;
+}
+
+#banner{
+	width: 300px;
+	height: 600px;	
+}
+
