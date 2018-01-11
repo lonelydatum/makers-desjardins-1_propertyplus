@@ -1,7 +1,38 @@
 @import './common.scss';
 
-.line{
-    width: 154px;
+#banner{
+	width: 300px;
+	height: 600px;	
+}
+
+
+
+.house{ transform-origin: 0px 0px; }
+.car{ transform-origin: 220px 375px; }
+.logo{
+	width: 161px;
+	height: 37px;
+	@include pos(113, 535);	
+}
+
+
+.t{
+	@include pos(27, 29);
+	font-size: 30px;
+	letter-spacing: -.2px;
+	line-height: 33px;
+}
+
+
+
+.frame1 {
+	// opacity: 1;	
+	.line{ 
+		width: 154px; 
+		height: 137px; 
+		&.left{ @include pos(0, 352); }
+		&.right{ @include pos(154, 136); }
+	}	
 }
 
 
@@ -11,8 +42,7 @@
 		// border: 1px solid red;
 		width: 151px;
 		height: 35px;
-		line-height: 35px;
-		text-align: center;
+		line-height: 35px;		
 		font-size: 16px;
 		letter-spacing: .2px;		
 	}

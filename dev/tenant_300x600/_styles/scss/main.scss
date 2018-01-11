@@ -1,0 +1,39 @@
+
+@import '../../../_common/styles/DBB.scss';
+
+
+.frame2{
+	// opacity: 1;	
+}
+
+.t{
+	// color: red;
+	@include pos(27, 26);
+	
+	font-size: 28px;
+	line-height: 32px;
+}
+
+
+
+.frame1 {
+	// opacity: 1;	
+	.line{ 		
+		width: 185px;
+		height: 164px;
+		&.left{ @include pos(-34, 356); }
+		&.right{ @include pos(151, 96); }
+	}	
+}
+
+.frame2{
+	.cta{
+		@include pos(28, 211805);
+		
+	}
+}
+
+// .house{
+// 	@include pos-scale(0, 0, 1);
+	
+// }
