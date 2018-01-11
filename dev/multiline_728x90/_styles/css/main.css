@@ -172,10 +172,6 @@ p {
   height: 90px;
 }
 
-.frame1 {
-  opacity: 1;
-}
-
 #hero {
   -webkit-transform: translate(419px, 15px) scale(0.43, 0.43);
   -ms-transform: translate(419px, 15px) scale(0.43, 0.43);
