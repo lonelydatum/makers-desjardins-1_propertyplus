@@ -173,9 +173,9 @@ p {
 }
 
 #hero {
-  -webkit-transform: translate(84px, 111px) scale(0.52, 0.52);
-  -ms-transform: translate(84px, 111px) scale(0.52, 0.52);
-  transform: translate(84px, 111px) scale(0.52, 0.52);
+  -webkit-transform: translate(84px, 111px) scale(0.56, 0.56);
+  -ms-transform: translate(84px, 111px) scale(0.56, 0.56);
+  transform: translate(84px, 111px) scale(0.56, 0.56);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -210,6 +210,7 @@ p {
 
 .logo {
   width: 88px;
+  height: 20px;
   -webkit-transform: translate(200px, 220px);
   -ms-transform: translate(200px, 220px);
   transform: translate(200px, 220px);
@@ -221,9 +222,9 @@ p {
 }
 
 .t {
-  -webkit-transform: translate(27px, 12px);
-  -ms-transform: translate(27px, 12px);
-  transform: translate(27px, 12px);
+  -webkit-transform: translate(19px, 12px);
+  -ms-transform: translate(19px, 12px);
+  transform: translate(19px, 12px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -234,13 +235,13 @@ p {
 }
 
 .frame1 .line {
-  width: 88px;
+  width: 75px;
 }
 
 .frame1 .line.left {
-  -webkit-transform: translate(0px, 160px);
-  -ms-transform: translate(0px, 160px);
-  transform: translate(0px, 160px);
+  -webkit-transform: translate(0px, 169px);
+  -ms-transform: translate(0px, 169px);
+  transform: translate(0px, 169px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -249,9 +250,9 @@ p {
 }
 
 .frame1 .line.right {
-  -webkit-transform: translate(214px, 86px);
-  -ms-transform: translate(214px, 86px);
-  transform: translate(214px, 86px);
+  -webkit-transform: translate(225px, 88px);
+  -ms-transform: translate(225px, 88px);
+  transform: translate(225px, 88px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -260,9 +261,9 @@ p {
 }
 
 .frame2 .cta {
-  -webkit-transform: translate(28px, 204px);
-  -ms-transform: translate(28px, 204px);
-  transform: translate(28px, 204px);
+  -webkit-transform: translate(19px, 204px);
+  -ms-transform: translate(19px, 204px);
+  transform: translate(19px, 204px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
