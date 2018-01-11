@@ -254,10 +254,6 @@ p {
   letter-spacing: .2px;
 }
 
-.frame2 {
-  opacity: 1;
-}
-
 .frame1 .line.left {
   -webkit-transform: translate(0px, 368px);
   -ms-transform: translate(0px, 368px);
