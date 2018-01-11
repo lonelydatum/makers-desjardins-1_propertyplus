@@ -1,0 +1,66 @@
+
+@import '../../../_common/styles/common.scss';
+
+
+#banner{
+	width: 300px;
+	height: 250px;	
+}
+
+.frame1{
+	opacity: 1;
+}
+
+
+#hero{
+	$scale: .52;
+	@include pos-scale(84, 111, $scale);	
+	.house{ 
+		transform-origin: 0px 0px; 
+		@include pos(0, 0);	
+	}
+	
+	.car{ 
+		@include pos(139, 105);	
+	}
+}
+
+
+.logo{
+	width: 88px;
+	// height: 37px;
+	@include pos(200, 220);	
+}
+
+
+.t{
+	@include pos(27, 12);
+	font-size: 24px;
+	// letter-spacing: -.2px;
+	line-height: 30px;
+}
+
+
+
+.frame1 {
+	// opacity: 1;	
+	.line{ 
+		width: 88px; 
+		// height: 137px; 
+		&.left{ @include pos(0, 160); }
+		&.right{ @include pos(214, 86); }
+	}	
+}
+
+
+.frame2{
+	.cta{
+		@include pos(28, 204);		
+		// border: 1px solid red;
+		width: 105px;
+		height: 32px;
+		line-height: 32px;		
+		font-size: 13px;
+		// letter-spacing: .2px;		
+	}
+}
