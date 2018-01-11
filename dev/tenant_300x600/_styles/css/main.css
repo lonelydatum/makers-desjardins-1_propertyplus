@@ -305,4 +305,17 @@ p {
   position: absolute;
 }
 
+.house {
+  width: 130px;
+  height: 229px;
+  -webkit-transform: translate(77px, 191px);
+  -ms-transform: translate(77px, 191px);
+  transform: translate(77px, 191px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
 /*# sourceMappingURL=main.css.map */

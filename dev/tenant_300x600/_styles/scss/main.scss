@@ -2,7 +2,7 @@
 @import '../../../_common/styles/DBB.scss';
 
 
-.frame2{
+.frame1{
 	// opacity: 1;	
 }
 
@@ -33,7 +33,9 @@
 	}
 }
 
-// .house{
-// 	@include pos-scale(0, 0, 1);
+.house{
+	width: 130px;
+	height: 229px;
+	@include pos(77, 191);
 	
-// }
+}

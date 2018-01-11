@@ -7,14 +7,14 @@
 	height: 90px;	
 }
 
-.frame2{
-	// opacity: 1;
+.frame1{
+	opacity: 1;
 }
 
 
 #hero{
-	$scale: .48;
-	@include pos-scale(414, 10, $scale);	
+	$scale: .43;
+	@include pos-scale(419, 15, $scale);	
 	.house{ 
 		transform-origin: 0px 0px; 
 		@include pos(0, 0);	
@@ -27,16 +27,16 @@
 
 
 .logo{
-	width: 88px;
-	height: 20px;
-	@include pos(625, 40);	
+	width: 140px;
+	// height: 20px;
+	@include pos(575, 32);	
 }
 
 
 .t{
-	@include pos(19, 9);
+	@include pos(19, 16);
 	font-size: 28px;
-	line-height: 36px;
+	line-height: 31px;
 }
 
 
@@ -44,10 +44,10 @@
 .frame1 {
 	// opacity: 1;	
 	.line{ 
-		width: 65px; 
+		width: 53px; 
 		// height: 78px; 
-		&.left{ @include pos(320, 19); }
-		&.right{ @include pos(530, 19); }
+		&.left{ @include pos(360, 25); }
+		&.right{ @include pos(512, 25); }
 	}	
 }
 
