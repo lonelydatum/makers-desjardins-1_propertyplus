@@ -1,2 +1,2 @@
-import common from '../../_common/js/common'
+import common from '../../_common/js/Simple'
 common()

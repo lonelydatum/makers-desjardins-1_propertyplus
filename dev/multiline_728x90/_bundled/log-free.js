@@ -8,6 +8,8 @@ TweenLite.defaultEase = Power2.easeInOut;
 
 function start() {
     var f2Delay = arguments.length <= 0 || arguments[0] === undefined ? 2.5 : arguments[0];
+    var left = arguments.length <= 1 || arguments[1] === undefined ? { x: '-', y: '-' } : arguments[1];
+    var right = arguments.length <= 2 || arguments[2] === undefined ? { x: '+', y: '+' } : arguments[2];
 
     var line = {
         dom: document.getElementById('line1')
@@ -21,8 +23,8 @@ function start() {
     tl.from(['.t1', '.logo'], .3, { opacity: 0 });
 
     tl.add('lines', '+=.3');
-    tl.from('.line.right', .6, { opacity: 0, x: '+=' + line.w, y: '+=' + line.h }, 'lines');
-    tl.from('.line.left', .6, { opacity: 0, x: '-=' + line.w, y: '-=' + line.h }, 'lines');
+    tl.from('.line.right', .6, { opacity: 0, x: right.x + '=' + line.w, y: right.y + '=' + line.h }, 'lines');
+    tl.from('.line.left', .6, { opacity: 0, x: left.x + '=' + line.w, y: left.y + '=' + line.h }, 'lines');
 
     tl.from('.house', .3, { opacity: 0, ease: Sine.easeInOut }, 'lines+=.5');
     tl.from('.car', .3, { opacity: 0, scale: .6, ease: Sine.easeInOut }, 'lines+=.8');
@@ -30,8 +32,10 @@ function start() {
 
     tl.add('f2', '+=' + f2Delay);
     tl.to('.t1', .3, { opacity: 0 }, 'f2');
-    tl.to('.line.right', .6, { opacity: 0, x: '+=' + line.w, y: '+=' + line.h }, 'f2');
-    tl.to('.line.left', .6, { opacity: 0, x: '-=' + line.w, y: '-=' + line.h }, 'f2');
+    tl.to('.line.right', .3, { opacity: 0, x: right.x + '=' + line.w, y: right.y + '=' + line.h }, 'f2');
+    tl.to('.line.left', .3, { opacity: 0, x: left.x + '=' + line.w, y: left.y + '=' + line.h }, 'f2');
+    tl.to('.house', .3, { opacity: 0 }, 'f2');
+    tl.to('.car', .3, { opacity: 0, scale: .6 }, 'f2');
 
     tl.set('.frame2', { opacity: 1 });
     tl.from('.t2', .3, { opacity: 0 });
@@ -57,13 +61,13 @@ module.exports = exports['default'];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _commonJsCommon = require('../../_common/js/common');
+var _commonJsSimple = require('../../_common/js/Simple');
 
-var _commonJsCommon2 = _interopRequireDefault(_commonJsCommon);
+var _commonJsSimple2 = _interopRequireDefault(_commonJsSimple);
 
-(0, _commonJsCommon2['default'])();
+(0, _commonJsSimple2['default'])(2.5, { x: '-', y: '+' });
 
-},{"../../_common/js/common":1}]},{},[2])
+},{"../../_common/js/Simple":1}]},{},[2])
 
 
 //# sourceMappingURL=main.js.map

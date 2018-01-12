@@ -1,65 +1,52 @@
-
 @import '../../../_common/styles/common.scss';
 
-
-#banner{
-	width: 728px;
-	height: 90px;	
-}
-
-.frame1{
+.frame2{
 	// opacity: 1;
 }
-
-
-#hero{
-	$scale: .43;
-	@include pos-scale(419, 15, $scale);	
-	.house{ 
-		transform-origin: 0px 0px; 
-		@include pos(0, 0);	
-	}
-	
-	.car{ 
-		@include pos(139, 105);	
-	}
-}
-
 
 .logo{
 	width: 140px;
 	// height: 20px;
-	@include pos(575, 32);	
+	@include pos(568, 32);	
 }
-
 
 .t{
 	@include pos(19, 16);
+	letter-spacing: .3px;
 	font-size: 28px;
-	line-height: 31px;
+	line-height: 29px;
+	// color: red;
 }
 
-
-
 .frame1 {
-	// opacity: 1;	
+	#hero{
+		$scale: .5;
+		@include pos-scale(345, 9, $scale);	
+		.car{ @include pos(139, 94);}
+	}
 	.line{ 
-		width: 53px; 
+		width: 170px; 
+		
 		// height: 78px; 
-		&.left{ @include pos(360, 25); }
-		&.right{ @include pos(512, 25); }
+		&.left{ @include pos(-7, -52); }		
 	}	
 }
 
-
 .frame2{
 	.cta{
-		@include pos(264, 34);		
+		@include pos(327, 27);		
 		// border: 1px solid red;
-		width: 105px;
-		height: 32px;
+		// background-color: transparent;
+		// color: red;
+		width: 142px;		
+		height: 35px;
 		line-height: 32px;		
-		font-size: 13px;
-		// letter-spacing: .2px;		
+		letter-spacing: .3px;
+		font-size: 15px;
 	}
+}
+
+#banner{
+	width: 728px;
+	height: 90px;	
 }

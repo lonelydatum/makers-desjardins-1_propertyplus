@@ -1,2 +1,2 @@
-import common from '../../_common/js/common'
-common()
+import common from '../../_common/js/Simple'
+common(2.5, {x:'-', y:'+'})
