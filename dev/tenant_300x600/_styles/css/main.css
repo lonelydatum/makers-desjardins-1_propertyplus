@@ -295,9 +295,9 @@ p {
 }
 
 .frame2 .cta {
-  -webkit-transform: translate(28px, 211805px);
-  -ms-transform: translate(28px, 211805px);
-  transform: translate(28px, 211805px);
+  -webkit-transform: translate(28px, 118px);
+  -ms-transform: translate(28px, 118px);
+  transform: translate(28px, 118px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
