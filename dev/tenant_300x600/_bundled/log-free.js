@@ -21,8 +21,10 @@ function start() {
     tl.from(['.t1', '.logo'], .3, { opacity: 0 });
 
     tl.add('lines', '+=.3');
-    tl.from('.line.right', .6, { opacity: 0, x: '+=' + line.w, y: '+=' + line.h }, 'lines');
-    tl.from('.line.left', .6, { opacity: 0, x: '-=' + line.w, y: '-=' + line.h }, 'lines');
+    // tl.from('.line.right', .6, {opacity:0, x:`+=${line.w}`, y:`+=${line.h}`}, 'lines')
+    // tl.from('.line.left', .6, {opacity:0, x:`-=${line.w}`, y:`-=${line.h}`}, 'lines')
+    tl.from('.line.right', .8, { clip: 'rect(0px,' + line.w + 'px,137px,' + line.w + 'px)', ease: Power2.easeOut }, 'lines');
+    tl.from('.line.left', .8, { clip: 'rect(0px,' + 0 + 'px,137px,' + 0 + 'px)', ease: Power2.easeOut }, 'lines');
 
     tl.from('.house', .3, { opacity: 0, ease: Sine.easeInOut }, 'lines+=.5');
     tl.from('.car', .3, { opacity: 0, scale: .6, ease: Sine.easeInOut }, 'lines+=.8');
@@ -30,8 +32,8 @@ function start() {
 
     tl.add('f2', '+=' + f2Delay);
     tl.to('.t1', .3, { opacity: 0 }, 'f2');
-    tl.to('.line.right', .6, { opacity: 0, x: '+=' + line.w, y: '+=' + line.h }, 'f2');
-    tl.to('.line.left', .6, { opacity: 0, x: '-=' + line.w, y: '-=' + line.h }, 'f2');
+    tl.to('.line.right', .4, { clip: 'rect(0px,' + line.w + 'px,137px,' + line.w + 'px)' }, 'f2');
+    tl.to('.line.left', .4, { clip: 'rect(0px,' + 0 + 'px,137px,' + 0 + 'px)' }, 'f2');
 
     tl.set('.frame2', { opacity: 1 });
     tl.from('.t2', .3, { opacity: 0 });

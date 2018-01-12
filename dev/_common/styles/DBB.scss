@@ -30,8 +30,16 @@
 	.line{ 
 		width: 154px; 
 		height: 137px; 
-		&.left{ @include pos(0, 352); }
-		&.right{ @include pos(154, 136); }
+		clip: rect(0px,185px,164px,0px);
+		&.left{ 
+			@include pos(0, 352); 
+			
+		}
+		&.right{ 
+			@include pos(154, 136); 
+			
+		}
+		
 	}	
 }
 

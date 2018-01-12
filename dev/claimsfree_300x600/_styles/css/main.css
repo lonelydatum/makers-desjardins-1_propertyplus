@@ -214,6 +214,7 @@ p {
 .frame1 .line {
   width: 154px;
   height: 137px;
+  clip: rect(0px, 185px, 164px, 0px);
 }
 
 .frame1 .line.left {
@@ -252,6 +253,10 @@ p {
   line-height: 35px;
   font-size: 16px;
   letter-spacing: .2px;
+}
+
+.frame1 {
+  opacity: 1;
 }
 
 .t {

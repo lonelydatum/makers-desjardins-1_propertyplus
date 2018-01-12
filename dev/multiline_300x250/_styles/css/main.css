@@ -200,6 +200,8 @@ p {
 
 .frame1 .line {
   width: 150px;
+  height: 133px;
+  clip: rect(0px, 150px, 133px, 0px);
 }
 
 .frame1 .line.left {

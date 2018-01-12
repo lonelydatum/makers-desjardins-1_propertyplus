@@ -26,8 +26,8 @@
 	}
 	.line{ 
 		width: 170px; 
-		
-		// height: 78px; 
+		height: 151px;
+		clip: rect(0px,170px,151px,0px);
 		&.left{ @include pos(-7, -52); }		
 	}	
 }
