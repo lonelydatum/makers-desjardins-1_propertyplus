@@ -1,0 +1,34 @@
+@import './common.scss';
+
+
+.frame1 {
+    // opacity: 1;
+    .line.left{
+        @include pos(-40, -50);
+        width: 150px;
+        height: 133px;
+        clip: rect(0px,150px,133px,0px);
+    }
+
+    .t{
+        @include pos(8, 5);
+        font-size: 16px;
+        // font-family: pratt;
+        letter-spacing: .3px;
+        word-spacing: 1px;
+        line-height: 19px;
+        // color: red;
+    }
+
+    .logo{
+        width: 111px;
+        @include pos(200, 14);
+        
+    }
+
+}
+
+#banner{
+    width: 320px;
+    height: 50px;
+}

@@ -1,6 +1,6 @@
 TweenLite.defaultEase = Power2.easeInOut
 
-function start(f2Delay=3, heroGone=true){
+function start(f2Delay=2.5, heroGone=true){
     const line = {
         dom: document.getElementById('line1')
     }

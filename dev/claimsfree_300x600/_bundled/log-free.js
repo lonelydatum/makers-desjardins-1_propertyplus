@@ -7,7 +7,7 @@ Object.defineProperty(exports, '__esModule', {
 TweenLite.defaultEase = Power2.easeInOut;
 
 function start() {
-    var f2Delay = arguments.length <= 0 || arguments[0] === undefined ? 3 : arguments[0];
+    var f2Delay = arguments.length <= 0 || arguments[0] === undefined ? 2.5 : arguments[0];
     var heroGone = arguments.length <= 1 || arguments[1] === undefined ? true : arguments[1];
 
     var line = {
