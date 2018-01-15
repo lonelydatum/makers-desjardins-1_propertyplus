@@ -1,0 +1,59 @@
+@import './common.scss';
+
+.frame1{
+	// opacity: 1;
+}
+
+.logo{
+	width: 140px;
+	// height: 20px;
+	@include pos(568, 32);	
+}
+
+.t{
+	@include pos(19, 16);
+	letter-spacing: .3px;
+	font-size: 28px;
+	line-height: 29px;
+	// color: red;
+}
+
+.frame1 {
+	#hero{		
+		@include pos(343, 8);	
+		// opacity: .5;		
+		.house{
+			width: 97px;
+			
+		}
+		.car{ 
+			@include pos(71, 49);
+			width: 49px;
+		}
+	}
+	.line{ 
+		width: 170px; 
+		height: 151px;
+		clip: rect(0px,170px,151px,0px);
+		&.left{ @include pos(-7, -52); }		
+	}	
+}
+
+.frame2{
+	.cta{
+		@include pos(327, 27);		
+		// border: 1px solid red;
+		// background-color: transparent;
+		// color: red;
+		width: 142px;		
+		height: 35px;
+		line-height: 32px;		
+		letter-spacing: .3px;
+		font-size: 15px;
+	}
+}
+
+#banner{
+	width: 728px;
+	height: 90px;	
+}

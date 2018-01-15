@@ -1,0 +1,13 @@
+@import '../../../_common/styles/BB.scss';
+
+.frame1{
+    // opacity: 1;
+    #hero {
+        @include pos(118, 83);
+        
+        .house{
+            width: 60px;
+            height: auto;
+        }
+    }
+}

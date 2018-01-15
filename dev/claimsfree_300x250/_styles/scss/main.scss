@@ -1,0 +1,15 @@
+@import '../../../_common/styles/BB.scss';
+
+
+.frame2 {
+    // opacity: 1;
+    .t.t2{
+        font-size: 22px;
+        letter-spacing: .3px;
+    }
+
+    .cta{
+        @include pos(24, 128);
+        
+    }
+}

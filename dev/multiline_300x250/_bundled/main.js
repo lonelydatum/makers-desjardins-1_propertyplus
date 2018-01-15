@@ -8,8 +8,7 @@ TweenLite.defaultEase = Power2.easeInOut;
 
 function start() {
     var f2Delay = arguments.length <= 0 || arguments[0] === undefined ? 2.5 : arguments[0];
-    var left = arguments.length <= 1 || arguments[1] === undefined ? { x: '-', y: '-' } : arguments[1];
-    var right = arguments.length <= 2 || arguments[2] === undefined ? { x: '+', y: '+' } : arguments[2];
+    var panning = arguments.length <= 1 || arguments[1] === undefined ? false : arguments[1];
 
     var line = {
         dom: document.getElementById('line1')
@@ -26,7 +25,12 @@ function start() {
     tl.from('.line.right', .8, { clip: 'rect(0px,' + line.w + 'px,137px,' + line.w + 'px)', ease: Power2.easeOut }, 'lines');
     tl.from('.line.left', .8, { clip: 'rect(0px,' + 0 + 'px,137px,' + 0 + 'px)', ease: Power2.easeOut }, 'lines');
 
-    tl.from('.house', .3, { opacity: 0, ease: Sine.easeInOut }, 'lines+=.5');
+    tl.from('.house', .3, { opacity: 0, ease: Sine.easeInOut, onComplete: function onComplete() {
+            if (panning) {
+                TweenLite.to('.house', 1.5, { y: '-=80', ease: Sine.easeIn });
+            }
+        } }, 'lines+=.5');
+
     tl.from('.car', .3, { opacity: 0, scale: .6, ease: Sine.easeInOut }, 'lines+=.8');
     tl.from('.car', .6, { x: '-=30' });
 
