@@ -23,6 +23,8 @@ function start() {
         tl.to('.t3', .3, { opacity: 0 }, '+=2');
     }
 
+    tl.to('.line', .3, { opacity: 0 });
+
     // tl.to(['.t3'], .3, {opacity:0})
     tl.set('.frame2', { opacity: 1 });
     tl.from(['.cta'], .3, { opacity: 0 }, '+=.2');
