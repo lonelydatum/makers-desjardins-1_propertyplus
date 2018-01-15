@@ -7,8 +7,8 @@ Object.defineProperty(exports, '__esModule', {
 TweenLite.defaultEase = Power2.easeInOut;
 
 function start() {
-    var f2Delay = arguments.length <= 0 || arguments[0] === undefined ? 2.5 : arguments[0];
-    var panning = arguments.length <= 1 || arguments[1] === undefined ? false : arguments[1];
+    var f2Delay = arguments.length <= 0 || arguments[0] === undefined ? 3 : arguments[0];
+    var heroGone = arguments.length <= 1 || arguments[1] === undefined ? true : arguments[1];
 
     var line = {
         dom: document.getElementById('line1')
@@ -19,31 +19,30 @@ function start() {
 
     var tl = new TimelineMax();
     tl.set('.frame1', { opacity: 1 });
-    tl.from(['.t1', '.logo'], .3, { opacity: 0 });
 
-    tl.add('lines', '+=.3');
-    tl.from('.line.right', .8, { clip: 'rect(0px,' + line.w + 'px,137px,' + line.w + 'px)', ease: Power2.easeOut }, 'lines');
-    tl.from('.line.left', .8, { clip: 'rect(0px,' + 0 + 'px,137px,' + 0 + 'px)', ease: Power2.easeOut }, 'lines');
+    tl.add('lines');
+    tl.from('.line.right', .6, { clip: 'rect(0px,' + line.w + 'px,137px,' + line.w + 'px)', ease: Power2.easeOut }, 'lines');
+    tl.from('.line.left', .6, { clip: 'rect(0px,' + 0 + 'px,137px,' + 0 + 'px)', ease: Power2.easeOut }, 'lines');
+    tl.from('.house', .3, { opacity: 0, ease: Sine.easeInOut }, '-=.2');
+    if (document.querySelector('.car')) {
+        tl.from('.car', .3, { opacity: 0, scale: .6, ease: Sine.easeInOut });
+        tl.from('.car', .6, { x: '-=30' });
+    }
 
-    tl.from('.house', .3, { opacity: 0, ease: Sine.easeInOut, onComplete: function onComplete() {
-            if (panning) {
-                TweenLite.to('.house', 1.5, { y: '-=80', ease: Sine.easeIn });
-            }
-        } }, 'lines+=.5');
-
-    tl.from('.car', .3, { opacity: 0, scale: .6, ease: Sine.easeInOut }, 'lines+=.8');
-    tl.from('.car', .6, { x: '-=30' });
+    tl.from('.t1', .3, { opacity: 0 }, '-=.1');
 
     tl.add('f2', '+=' + f2Delay);
-    tl.to('.t1', .3, { opacity: 0 }, 'f2');
     tl.to('.line.right', .4, { clip: 'rect(0px,' + line.w + 'px,137px,' + line.w + 'px)' }, 'f2');
     tl.to('.line.left', .4, { clip: 'rect(0px,' + 0 + 'px,137px,' + 0 + 'px)' }, 'f2');
-    tl.to('.house', .3, { opacity: 0 }, 'f2');
-    tl.to('.car', .3, { opacity: 0 }, 'f2');
+    if (heroGone) {
+        tl.to(['.house', '.car'], .4, { opacity: 0 }, 'f2');
+    }
+
+    tl.to('.t1', .3, { opacity: 0 }, 'f2+=.2');
 
     tl.set('.frame2', { opacity: 1 });
     tl.from('.t2', .3, { opacity: 0 });
-    tl.from('.cta', .3, { opacity: 0 }, '+=.3');
+    tl.from('.cta', .3, { opacity: 0 }, '+=.5');
 }
 
 var bannerbtn = document.getElementById('bannerbtn');
@@ -65,13 +64,13 @@ module.exports = exports['default'];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _commonJsSimple = require('../../_common/js/Simple');
+var _commonJsF1F2 = require('../../_common/js/F1F2');
 
-var _commonJsSimple2 = _interopRequireDefault(_commonJsSimple);
+var _commonJsF1F22 = _interopRequireDefault(_commonJsF1F2);
 
-(0, _commonJsSimple2['default'])();
+(0, _commonJsF1F22['default'])();
 
-},{"../../_common/js/Simple":1}]},{},[2])
+},{"../../_common/js/F1F2":1}]},{},[2])
 
 
 //# sourceMappingURL=main.js.map
