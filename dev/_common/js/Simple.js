@@ -26,7 +26,7 @@ function start(f2Delay=2.5, left={x:'-', y:'-'}, right={x:'+', y:'+'}){
     tl.to('.line.right', .4, {clip:`rect(0px,${line.w}px,137px,${line.w}px)`}, 'f2')
     tl.to('.line.left', .4, {clip:`rect(0px,${0}px,137px,${0}px)`}, 'f2')
     tl.to('.house', .3, {opacity:0}, 'f2')
-    tl.to('.car', .3, {opacity:0, scale:.6}, 'f2')
+    tl.to('.car', .3, {opacity:0}, 'f2')
     
 
 

@@ -167,7 +167,7 @@ p {
   font-style: normal;
 }
 
-.frame2 {
+.frame1 {
   opacity: 1;
 }
 
@@ -227,9 +227,9 @@ p {
 }
 
 .frame1 #hero {
-  -webkit-transform: translate(84px, 92px) scale(0.56, 0.56);
-  -ms-transform: translate(84px, 92px) scale(0.56, 0.56);
-  transform: translate(84px, 92px) scale(0.56, 0.56);
+  -webkit-transform: translate(82px, 91px);
+  -ms-transform: translate(82px, 91px);
+  transform: translate(82px, 91px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -237,15 +237,22 @@ p {
   position: absolute;
 }
 
+.frame1 #hero .house {
+  width: 113px;
+  height: 86px;
+}
+
 .frame1 #hero .car {
-  -webkit-transform: translate(144px, 99px);
-  -ms-transform: translate(144px, 99px);
-  transform: translate(144px, 99px);
+  -webkit-transform: translate(81px, 56px);
+  -ms-transform: translate(81px, 56px);
+  transform: translate(81px, 56px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
+  width: 57px;
+  height: 28px;
 }
 
 .frame2 .cta {

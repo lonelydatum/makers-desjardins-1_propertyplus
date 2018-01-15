@@ -1,6 +1,6 @@
 @import '../../../_common/styles/common.scss';
 
-.frame2{
+.frame1{
 	// opacity: 1;
 }
 
@@ -19,10 +19,17 @@
 }
 
 .frame1 {
-	#hero{
-		$scale: .5;
-		@include pos-scale(345, 9, $scale);	
-		.car{ @include pos(139, 94);}
+	#hero{		
+		@include pos(343, 8);	
+		// opacity: .5;		
+		.house{
+			width: 97px;
+			
+		}
+		.car{ 
+			@include pos(71, 49);
+			width: 49px;
+		}
 	}
 	.line{ 
 		width: 170px; 

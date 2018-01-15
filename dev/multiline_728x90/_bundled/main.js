@@ -35,7 +35,7 @@ function start() {
     tl.to('.line.right', .4, { clip: 'rect(0px,' + line.w + 'px,137px,' + line.w + 'px)' }, 'f2');
     tl.to('.line.left', .4, { clip: 'rect(0px,' + 0 + 'px,137px,' + 0 + 'px)' }, 'f2');
     tl.to('.house', .3, { opacity: 0 }, 'f2');
-    tl.to('.car', .3, { opacity: 0, scale: .6 }, 'f2');
+    tl.to('.car', .3, { opacity: 0 }, 'f2');
 
     tl.set('.frame2', { opacity: 1 });
     tl.from('.t2', .3, { opacity: 0 });

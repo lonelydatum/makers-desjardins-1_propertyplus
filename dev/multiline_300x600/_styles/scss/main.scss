@@ -2,7 +2,18 @@
 @import '../../../_common/styles/DBB.scss';
 
 
-.frame2{
+.frame1{
 	// opacity: 1;	
 }
 
+.house{ 
+	@include pos(25, 222);
+	
+	width: 204px;
+	height: 156px;
+ }
+.car{ 
+	@include pos(174, 325);
+	width: 104px;
+	height: 51px;
+ }

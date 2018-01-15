@@ -172,18 +172,6 @@ p {
   height: 600px;
 }
 
-.house {
-  -webkit-transform-origin: 0px 0px;
-  -ms-transform-origin: 0px 0px;
-  transform-origin: 0px 0px;
-}
-
-.car {
-  -webkit-transform-origin: 220px 375px;
-  -ms-transform-origin: 220px 375px;
-  transform-origin: 220px 375px;
-}
-
 .logo {
   width: 161px;
   height: 37px;
@@ -255,10 +243,6 @@ p {
   letter-spacing: .2px;
 }
 
-.frame1 {
-  opacity: 1;
-}
-
 .t {
   font-size: 34px;
   line-height: 37px;
@@ -295,6 +279,19 @@ p {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
+}
+
+.house {
+  -webkit-transform: translate(54px, 272px);
+  -ms-transform: translate(54px, 272px);
+  transform: translate(54px, 272px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  width: 195px;
+  height: 149px;
 }
 
 /*# sourceMappingURL=main.css.map */

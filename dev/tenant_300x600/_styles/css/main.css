@@ -172,18 +172,6 @@ p {
   height: 600px;
 }
 
-.house {
-  -webkit-transform-origin: 0px 0px;
-  -ms-transform-origin: 0px 0px;
-  transform-origin: 0px 0px;
-}
-
-.car {
-  -webkit-transform-origin: 220px 375px;
-  -ms-transform-origin: 220px 375px;
-  transform-origin: 220px 375px;
-}
-
 .logo {
   width: 161px;
   height: 37px;

@@ -194,9 +194,9 @@ p {
 }
 
 .frame1 #hero {
-  -webkit-transform: translate(345px, 9px) scale(0.5, 0.5);
-  -ms-transform: translate(345px, 9px) scale(0.5, 0.5);
-  transform: translate(345px, 9px) scale(0.5, 0.5);
+  -webkit-transform: translate(343px, 8px);
+  -ms-transform: translate(343px, 8px);
+  transform: translate(343px, 8px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -204,15 +204,20 @@ p {
   position: absolute;
 }
 
+.frame1 #hero .house {
+  width: 97px;
+}
+
 .frame1 #hero .car {
-  -webkit-transform: translate(139px, 94px);
-  -ms-transform: translate(139px, 94px);
-  transform: translate(139px, 94px);
+  -webkit-transform: translate(71px, 49px);
+  -ms-transform: translate(71px, 49px);
+  transform: translate(71px, 49px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
+  width: 49px;
 }
 
 .frame1 .line {

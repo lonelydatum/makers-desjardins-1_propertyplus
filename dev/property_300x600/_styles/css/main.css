@@ -172,18 +172,6 @@ p {
   height: 600px;
 }
 
-.house {
-  -webkit-transform-origin: 0px 0px;
-  -ms-transform-origin: 0px 0px;
-  transform-origin: 0px 0px;
-}
-
-.car {
-  -webkit-transform-origin: 220px 375px;
-  -ms-transform-origin: 220px 375px;
-  transform-origin: 220px 375px;
-}
-
 .logo {
   width: 161px;
   height: 37px;
@@ -278,9 +266,10 @@ p {
 }
 
 .house {
-  -webkit-transform: translate(0px, 0px) scale(1, 1);
-  -ms-transform: translate(0px, 0px) scale(1, 1);
-  transform: translate(0px, 0px) scale(1, 1);
+  width: 197px;
+  -webkit-transform: translate(53px, 252px);
+  -ms-transform: translate(53px, 252px);
+  transform: translate(53px, 252px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

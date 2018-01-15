@@ -3,7 +3,7 @@
 
 
 .frame1{
-	opacity: 1;	
+	// opacity: 1;	
 }
 
 .t{
@@ -25,11 +25,11 @@
 .frame2{
 	.cta{
 		@include pos(28, 205);
-		
 	}
 }
 
-// .house{
-// 	@include pos-scale(0, 0, 1);
-	
-// }
+.house{
+	@include pos(54, 272);	
+	width: 195px;
+	height: 149px;
+}
