@@ -196,7 +196,34 @@ p {
   line-height: 19px;
 }
 
-.frame1 .logo {
+.frame2 .cta {
+  -webkit-transform: translate(10px, 9px);
+  -ms-transform: translate(10px, 9px);
+  transform: translate(10px, 9px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  width: 137px;
+  height: 32px;
+  line-height: 28px;
+  letter-spacing: .3px;
+  font-size: 14px;
+}
+
+.frame2 .arrow {
+  -webkit-transform: translate(162px, 15px);
+  -ms-transform: translate(162px, 15px);
+  transform: translate(162px, 15px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.logo {
   width: 111px;
   -webkit-transform: translate(200px, 14px);
   -ms-transform: translate(200px, 14px);

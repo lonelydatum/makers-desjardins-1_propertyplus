@@ -20,13 +20,38 @@
         // color: red;
     }
 
-    .logo{
-        width: 111px;
-        @include pos(200, 14);
-        
-    }
+   
 
 }
+
+
+.frame2{
+	.cta{
+		@include pos(10, 9);		
+		// border: 1px solid red;
+		// background-color: transparent;
+		// color: red;
+		width: 137px;		
+		height: 32px;
+		line-height: 28px;		
+		letter-spacing: .3px;
+		font-size: 14px;
+    }
+
+    .arrow{
+        @include pos(162, 15);
+        
+    }
+    
+
+   
+}
+
+.logo{
+    width: 111px;
+    @include pos(200, 14);        
+}
+
 
 #banner{
     width: 320px;

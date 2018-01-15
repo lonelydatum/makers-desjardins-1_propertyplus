@@ -17,13 +17,19 @@ function start() {
     tl.to('.t1', .3, { opacity: 0 }, '+=3');
 
     tl.from('.t2', .3, { opacity: 0 });
+    tl.to('.t2', .3, { opacity: 0 }, '+=2');
     if (document.querySelector('.t3')) {
-        tl.to('.t2', .3, { opacity: 0 }, '+=2');
         tl.from('.t3', .3, { opacity: 0 });
+        tl.to('.t3', .3, { opacity: 0 }, '+=2');
     }
+
+    // tl.to(['.t3'], .3, {opacity:0})
+    tl.set('.frame2', { opacity: 1 });
+    tl.from(['.cta'], .3, { opacity: 0 }, '+=.2');
+    tl.from(['.arrow'], .3, { opacity: 0 }, '+=.2');
 }
 
-exports['default'] = start();
+exports['default'] = start;
 module.exports = exports['default'];
 
 },{}],2:[function(require,module,exports){
