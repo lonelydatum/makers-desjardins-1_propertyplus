@@ -17,7 +17,7 @@ function start(){
         tl.to('.t3', .3, {opacity:0}, '+=2')
     }
 
-    tl.to('.line', .3, {opacity:0})
+    tl.to('.line.left', .7, {clip:`rect(0px,0px,133px,0px)`, ease:Power2.easeOut})
 
     // tl.to(['.t3'], .3, {opacity:0})
     tl.set('.frame2', {opacity:1})
